@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>552</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="start_button">
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>刷取内容</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="materials_box_1">
+        <item>
+         <property name="text">
+          <string>经验材料</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>星际材料</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>晋阶材料</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>遗器</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>模拟宇宙</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="get_inner_legacy">
+        <property name="text">
+         <string>获取内圈遗器</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <item>
+         <property name="text">
+          <string>世界1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>世界2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>世界3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>世界4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>世界5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>世界6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>世界7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>世界8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>世界9</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="message_checkBox">
+        <property name="text">
+         <string>关闭消息窗口</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>执行任务</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="pioneer_power">
+        <property name="text">
+         <string>刷体力</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="daily_task">
+        <property name="text">
+         <string>领取日常奖励</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="nameless_honor">
+        <property name="text">
+         <string>领取纪行奖励</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="simulated_universe">
+        <property name="text">
+         <string>模拟宇宙</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="text_display"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>552</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menubutton">
+    <property name="title">
+     <string>button</string>
+    </property>
+    <addaction name="email_set"/>
+   </widget>
+   <addaction name="menubutton"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="email_set">
+   <property name="text">
+    <string>email</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
