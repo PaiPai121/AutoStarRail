@@ -5,7 +5,7 @@ import time
 
 import pygetwindow as gw
 from controller.target_detector import *
-from controller.win_processor import WinProcessor
+from utils.win_processor import WinProcessor
 
 
 def start_launcher(game_folder = 'Star Rail',game_executable = 'launcher.exe',game_title = "崩坏：星穹铁道"):

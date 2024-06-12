@@ -6,7 +6,7 @@ from utils.gamepad import *
 from paddleocr import PaddleOCR
 import numpy as np
 
-from controller.win_processor import WinProcessor
+from utils.win_processor import WinProcessor
 
 
 class TargetDetector:
