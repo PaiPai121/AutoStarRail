@@ -1,9 +1,11 @@
-import os
 import json
+import os
 import subprocess
+import time
 
 import pygetwindow as gw
-import time
+from controller.target_detector import *
+from utils.win_processor import WinProcessor
 
 
 def start_launcher(game_folder = 'Star Rail',game_executable = 'launcher.exe',game_title = "崩坏：星穹铁道"):
@@ -14,7 +16,7 @@ def start_launcher(game_folder = 'Star Rail',game_executable = 'launcher.exe',ga
     # game_executable = 'launcher.exe'
 
     # 保存游戏路径的文件名
-    path_file = 'game_path.json'
+    path_file = 'config/game_path.json'
 
     # 搜索游戏路径的函数
     def find_game_path(folder,executable):
@@ -87,7 +89,7 @@ import pyautogui
 
 from paddleocr import PaddleOCR
 import numpy as np
-import cv2
+
 
 def get_screenshot(window):
     x = window.left
@@ -130,14 +132,15 @@ def click_position(window,position,x=0,y=0):
 def click_start_button(game_title,click = True,WindowsDPIScale = 1.25):
     window = gw.getWindowsWithTitle(game_title)[0]
     window.activate()
-    screenshot,x,y,_,_ = get_screenshot(window)
+    td = TargetDetector(window)
+    find,start_game_positon = td.findText("开始游戏")
 
-    find,start_game_positon = findText(screenshot, "开始游戏")
+    win_action = WinProcessor()
 
     # 如果找到了“开始游戏”四个字
     if find and click:
         # 计算点击位置
-        click_position(window,start_game_positon,x,y)
+        win_action.click_position(window,start_game_positon)
         print("点击'开始游戏'")
         return True
     else:
@@ -165,6 +168,9 @@ def click_enter_game(game_title):
 def check_download(figure,game_title):
     timeout = 40 
     start_time = time.time()
+    window = gw.getWindowsWithTitle(game_title)[0]
+    window.activate()
+    screenshot, x, y, _, _ = get_screenshot(window)
     while time.time() - start_time < timeout:
         try:
             if findText(figure,"资源下载失败"):

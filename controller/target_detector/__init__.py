@@ -1,1 +1,1 @@
-from target_detector import TargetDetector
+from .TargetDetector import TargetDetector
