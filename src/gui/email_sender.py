@@ -31,7 +31,7 @@ class Email_sender:
         # 创建一个MIMEText邮件对象
         message = MIMEText(body, 'plain', 'utf-8')
         message['From'] = Header(self.username, 'utf-8')
-        message['To'] = Header(self.receiver, 'utf-8')
+        message['To'] = Header(self.username, 'utf-8')
         message['Subject'] = Header(self.subject, 'utf-8')
         try:
             # 连接SMTP服务器
