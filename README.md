@@ -4,7 +4,6 @@
  * 
  * Copyright (c) 2024 by paipai121, All Rights Reserved. 
 -->
-<div align="center">
 
 # AutoStarRail
 
