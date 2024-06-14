@@ -218,15 +218,27 @@ def start_game(game_title = "崩坏：星穹铁道"):
     else:
         # 未打开
         # 打开启动器
-        # start_launcher(game_title=game_title) # 现在改成了米哈游启动器
-        start_launcher(game_folder="miHoYo Launcher", game_title="米哈游启动器")
+        launcher_window = ""
+        try:
+            start_launcher(game_title=game_title) # 现在改成了米哈游启动器
+            print("启动崩铁启动器")
+            launcher_window = "崩坏：星穹铁道"
+        except:
+            print("未启动崩铁启动器，尝试米哈游启动器")
+            try:
+                start_launcher(game_folder="miHoYo Launcher", game_title="米哈游启动器")
+                print("启动米哈游启动器")
+                launcher_window = "米哈游启动器"
+            except:
+                print("未启动米哈游启动器，启动器启动失败")
         time.sleep(0.5)
         # 启动游戏
         # click_start_button(game_title) # 此处应该是米哈游启动器了
-        click_start_button(game_title = "米哈游启动器")
-        # click_enter_game(game_title)
-        # 进入游戏
-        wait_game_start(game_title)
+        if launcher_window:
+            click_start_button(game_title = launcher_window)
+            # click_enter_game(game_title)
+            # 进入游戏
+            wait_game_start(game_title)
         
     time.sleep(2)
 
