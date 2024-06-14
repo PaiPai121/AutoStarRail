@@ -76,5 +76,18 @@ class Gamepad:
         # 右摇杆XY轴  x_values和y_values改成-1.0到1.0之间的浮点值，可以精确到小数点后5位
         self.gamepad.update()
 
+    def joystick_movement(self, theta=0, duration=0.5, amplitude=1):
+        start_time = time.time()
+        while time.time() - start_time < duration:
+            # 时间-角度序列
+            theta_time = theta * (time.time() - start_time) / duration
+
+            # 幅度
+            amplitude_time = amplitude * (time.time() - start_time) / duration
+
+            gp.RIGHT_JOYSTCIK(theta_time, amplitude_time)
+
+            time.sleep(0.01)
+
 if __name__ == "__main__":
     gp = Gamepad()

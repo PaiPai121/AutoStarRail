@@ -2,11 +2,11 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow
 from PyQt6.QtCore import pyqtSlot
-from main_window import Ui_MainWindow  # 导入通过 pyuic 生成的代码
+from src.gui.main_window import Ui_MainWindow  # 导入通过 pyuic 生成的代码
 from PyQt6.QtCore import QDateTime
-from msg_box import MessageBox
-from EmailPasswordWindow import EmailPasswordDialog
-from email_sender import Email_sender
+from src.gui.msg_box import MessageBox
+from src.gui.EmailPasswordWindow import EmailPasswordDialog
+from src.gui.email_sender import Email_sender
 # from start_game import start_game
 # from daily_tasks import *
 
@@ -38,7 +38,7 @@ class MainWindow(QMainWindow):
         self.nameless_honor = nameless_honor_func
 
     def get_email_password(self):
-        with open('credentials.txt', 'r') as file:
+        with open('./src/gui/credentials.txt', 'r') as file:
             self.email = file.readline().strip()
             self.password = file.readline().strip()
 

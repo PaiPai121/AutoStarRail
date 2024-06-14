@@ -1,6 +1,6 @@
 import numpy as np
 import time
-from src.gamepad.gamepad_controller import *
+from utils.gamepad.gamepad_controller import *
 from start_game import *
 from start_game import findText
 gp = Gamepad()

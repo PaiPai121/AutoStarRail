@@ -40,7 +40,7 @@ class EmailPasswordDialog(QDialog):
         password = self.password_input.text()
 
         # 将加密后的信息保存到本地文件
-        with open('credentials.txt', 'w') as file:
+        with open('./src/gui/credentials.txt', 'w') as file:
             file.write(email)
             file.write('\n')
             file.write(password)

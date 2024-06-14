@@ -162,14 +162,14 @@ def click_enter_game(game_title):
     return False
 
 
-def check_download(game_title):
+def check_download(figure,game_title):
     timeout = 40 
     start_time = time.time()
     while time.time() - start_time < timeout:
         try:
-            if findText("资源下载失败"):
+            if findText(figure,"资源下载失败"):
                 print("资源下载失败")
-                find, position = findText("确认")  
+                find, position = findText(figure,"确认")  
                 window = gw.getWindowsWithTitle(game_title)[0]
                 click_position(window,position)          
             return
@@ -193,7 +193,9 @@ def wait_game_start(game_title):
             # 如果窗口没有找到，继续尝试
             pass
         time.sleep(0.3)  # 等待1秒后再尝试
-    check_download(game_title)
+    window = gw.getWindowsWithTitle(game_title)[0]
+    figure,_,_,_,_ = get_screenshot(window)
+    check_download(figure,game_title)
 
 
 
@@ -216,10 +218,12 @@ def start_game(game_title = "崩坏：星穹铁道"):
     else:
         # 未打开
         # 打开启动器
-        start_launcher(game_title=game_title)
+        # start_launcher(game_title=game_title) # 现在改成了米哈游启动器
+        start_launcher(game_folder="miHoYo Launcher", game_title="米哈游启动器")
         time.sleep(0.5)
         # 启动游戏
-        click_start_button(game_title)
+        # click_start_button(game_title) # 此处应该是米哈游启动器了
+        click_start_button(game_title = "米哈游启动器")
         # click_enter_game(game_title)
         # 进入游戏
         wait_game_start(game_title)
