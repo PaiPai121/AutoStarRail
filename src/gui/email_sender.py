@@ -4,10 +4,10 @@ from email.header import Header
 
 
 class Email_sender:
-    def __init__(self,username = "",password = "") -> None:
+    def __init__(self,username = "",password = "",server = 'smtp.163.com',port = 465) -> None:
         # 网易邮箱的SMTP服务器地址和端口
-        self.smtp_server = 'smtp.163.com'
-        self.smtp_port = 465  # 网易邮箱SMTP服务端口通常为465
+        self.smtp_server = server
+        self.smtp_port = port  # 网易邮箱SMTP服务端口通常为465
 
         # # 发件人邮箱账号和授权码
         # username = 'your_email@163.com'
@@ -18,8 +18,8 @@ class Email_sender:
         # self.receiver = username
         self.password = password
         # 邮件主题和正文
-        self.subject = '自动星铁'
-        self.body = '这是一封测试邮件。'
+        # self.subject = '自动星铁'
+        # self.body = '这是一封测试邮件。'
 
     def set_email(self,username,password):
         # 邮箱
@@ -32,7 +32,7 @@ class Email_sender:
         message = MIMEText(body, 'plain', 'utf-8')
         message['From'] = Header(self.username, 'utf-8')
         message['To'] = Header(self.username, 'utf-8')
-        message['Subject'] = Header(self.subject, 'utf-8')
+        message['Subject'] = Header("自动星铁message", 'utf-8')
         try:
             # 连接SMTP服务器
             server = smtplib.SMTP_SSL(self.smtp_server, self.smtp_port)

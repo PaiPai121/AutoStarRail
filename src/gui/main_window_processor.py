@@ -1,15 +1,15 @@
 # main.py
 import sys
-from PyQt6.QtWidgets import QApplication, QMainWindow
+from PyQt6.QtWidgets import QApplication, QMainWindow, QLineEdit
 from PyQt6.QtCore import pyqtSlot
 from src.gui.main_window import Ui_MainWindow  # 导入通过 pyuic 生成的代码
 from PyQt6.QtCore import QDateTime
 from src.gui.msg_box import MessageBox
-from src.gui.EmailPasswordWindow import EmailPasswordDialog
-from src.gui.email_sender import Email_sender
-# from start_game import start_game
-# from daily_tasks import *
 
+from src.gui.email_sender import Email_sender
+
+
+### 通过update和append message向窗口发送消息。
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -20,6 +20,8 @@ class MainWindow(QMainWindow):
         self.msgBox.show()
         # 连接按钮的点击信号到槽函数
         # self.ui.start_button.clicked.connect(self.on_start_button_clicked)
+        self.ui.sender_password_edit.setEchoMode(QLineEdit.EchoMode.Password)
+
         self.ui.materials_box_1.currentIndexChanged.connect(self.on_material_box_1_changed)
         self.ui.message_checkBox.stateChanged.connect(self.on_message_checkbox_changed)
         self.message = []
@@ -27,8 +29,15 @@ class MainWindow(QMainWindow):
         self.append_message("启动")
         self.task_list = [self.ui.pioneer_power,self.ui.daily_task,self.ui.nameless_honor,self.ui.simulated_universe] # 体力，日常，勋礼，模拟宇宙
         self.to_do = []
-        self.ui.email_set.triggered.connect(self.openEmailPasswordWindow)
+        self.ui.set_email.clicked.connect(self.on_set_email_clicked)
+        # 废弃的邮箱页面
+        # self.ui.email_set.triggered.connect(self.openEmailPasswordWindow)
+
+        ## 获取本地保存到账号信息并写入
         self.get_email_password()
+        self.ui.sender_email_edit.setText(self.email)
+        self.ui.sender_password_edit.setText(self.password)
+
         self.set_mission(None,None,None)
 
     def set_mission(self,start_game_func,pioneer_power_func,nameless_honor_func):
@@ -41,6 +50,9 @@ class MainWindow(QMainWindow):
         with open('./src/gui/credentials.txt', 'r') as file:
             self.email = file.readline().strip()
             self.password = file.readline().strip()
+            self.email_server = file.readline().strip()
+            self.email_port = file.readline().strip()
+
 
 
     def update_message(self):
@@ -103,8 +115,25 @@ class MainWindow(QMainWindow):
         
 
         ## 邮件发送
-        sender = Email_sender(self.email,self.password)
-        sender.send_email(self.ui.text_display.toPlainText())
+        if self.ui.checkBox.isChecked():
+            # 接受邮件发送
+            sender = Email_sender(self.email,self.password)
+            sender.send_email(self.ui.text_display.toPlainText())
+    @pyqtSlot()
+    def on_set_email_clicked(self):
+        self.email = self.ui.sender_email_edit.text()
+        self.password = self.ui.sender_password_edit.text()
+        self.email_server = self.ui.sender_email_server.text()
+        self.email_port = self.ui.sender_SSL_port.text()
+        with open('./src/gui/credentials.txt', 'w') as file:
+            file.write(self.email)
+            file.write('\n')
+            file.write(self.password)
+            file.write('\n')
+            file.write(self.email_server)
+            file.write('\n')
+            file.write(self.email_port)
+            # if self.ui.
 
     @pyqtSlot()
     def on_message_checkbox_changed(self):
@@ -127,14 +156,14 @@ class MainWindow(QMainWindow):
         pass
 
     # @pyqtSlot
-    def openEmailPasswordWindow(self):
-        # # 创建一个EmailPasswordWindow实例
-        self.email_password_window = EmailPasswordDialog(self)
-        if self.email:
-            self.email_password_window.set_email_password(self.email,self.password)
-        # # 显示窗口
-        self.email_password_window.show()
-        pass
+    # def openEmailPasswordWindow(self):
+    #     # # 创建一个EmailPasswordWindow实例
+    #     self.email_password_window = EmailPasswordDialog(self)
+    #     if self.email:
+    #         self.email_password_window.set_email_password(self.email,self.password)
+    #     # # 显示窗口
+    #     self.email_password_window.show()
+    #     pass
 
 def main_window():
     app = QApplication(sys.argv)
