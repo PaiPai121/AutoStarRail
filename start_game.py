@@ -13,8 +13,18 @@ import pyautogui
 from paddleocr import PaddleOCR
 import numpy as np
 
+# 给每个函数一个pigeon，用来向main window传递信息
+# from 
+# my_package/module_a.py
 
-def start_launcher(game_folder = 'Star Rail',game_executable = 'launcher.exe',game_title = "崩坏：星穹铁道"):
+# # 导入自定义的print函数
+# from utils.win_processor import print as pigeon
+
+# from main import pigeon
+
+
+
+def start_launcher(game_folder = 'Star Rail',game_executable = 'launcher.exe',game_title = "崩坏：星穹铁道",pigeon = None):
     """
     # 游戏的安装文件夹名称
     # game_folder = 'Star Rail'
@@ -54,28 +64,29 @@ def start_launcher(game_folder = 'Star Rail',game_executable = 'launcher.exe',ga
         if game_path:
             with open(path_file, 'w') as f:
                 json.dump(data_to_save, f)
-            print(f"Game path saved to {path_file}")
+            pigeon(f"Game path saved to {path_file}")
+            
         else:
-            print("Game not found, path not saved.")
+            pigeon("Game not found, path not saved.")
 
     def get_saved_path(path_file):
         # 取回存取的文件
         with open(path_file, 'r') as f:
             data = json.load(f)
-        print(f"Game path and launcher name loaded from {path_file}")
+        pigeon(f"Game path and launcher name loaded from {path_file}")
         return data['game_path'], data['launcher_name']
 
     # 如果游戏路径文件存在，则直接从文件加载路径
     if os.path.exists(path_file):
         game_path,launcher_name = get_saved_path(path_file)
         if os.path.exists(game_path):
-            print(f"Game found at: {game_path}")
+            pigeon(f"Game found at: {game_path}")
         else:
-            print("Saved path not found, searching for game...")
+            pigeon("Saved path not found, searching for game...")
             game_path = find_game_path(game_folder,game_executable)
             save_game_path(game_path, path_file)
     else:
-        print("No saved path found, searching for game...")
+        pigeon("No saved path found, searching for game...")
         game_path = find_game_path(game_folder,game_executable)
         if game_path:
             launcher_name = game_folder
@@ -89,7 +100,7 @@ def start_launcher(game_folder = 'Star Rail',game_executable = 'launcher.exe',ga
         timeout = 10  # 等待窗口出现的最大秒数
         start_time = time.time()
         game_window = None
-        print("打开启动器")
+        pigeon("打开启动器")
         while time.time() - start_time < timeout:
             try:
                 # 尝试获取窗口
@@ -102,7 +113,7 @@ def start_launcher(game_folder = 'Star Rail',game_executable = 'launcher.exe',ga
             time.sleep(0.3)  # 等待1秒后再尝试
         return True, launcher_name
     else:
-        print("Game not found.")
+        pigeon("Game not found.")
         return False, launcher_name
 
 
@@ -143,7 +154,7 @@ def click_position(window,position,x=0,y=0):
     window.activate()
     # 模拟鼠标点击操作
     pyautogui.click(start_game_x, start_game_y)
-    print("开始游戏按钮被点击。")
+    pigeon("开始游戏按钮被点击。")
     return True
 
 
@@ -160,10 +171,10 @@ def click_start_button(game_title,click = True,WindowsDPIScale = 1.25):
     if find and click:
         # 计算点击位置
         win_action.click_position(window,start_game_positon,window_left,window_top)
-        print("点击'开始游戏'")
+        pigeon("点击'开始游戏'")
         return True
     else:
-        print("未能找到'开始游戏'四个字。")
+        pigeon("未能找到'开始游戏'四个字。")
         return False
 
 
@@ -193,7 +204,7 @@ def check_download(figure,game_title):
     while time.time() - start_time < timeout:
         try:
             if findText(figure,"资源下载失败"):
-                print("资源下载失败")
+                pigeon("资源下载失败")
                 find, position = findText(figure,"确认")  
                 window = gw.getWindowsWithTitle(game_title)[0]
                 click_position(window,position)          
@@ -212,7 +223,7 @@ def wait_game_start(game_title):
     while time.time() - start_time < timeout:
         try:
             if click_enter_game(game_title):
-                print("点击进入游戏")
+                pigeon("点击进入游戏")
                 return
                 break
         except IndexError:
@@ -232,14 +243,14 @@ def start_game(game_title = "崩坏：星穹铁道"):
     # 检查是否崩坏：星穹铁道已经开启
     if gw.getWindowsWithTitle(game_title):
         # 如果已经打开
-        print("Game started.")
+        pigeon("Game started.")
 
         # 检查一下是星穹铁道启动器还是游戏本体
-        print("check launcher or game")
+        pigeon("check launcher or game")
         opened = not check_launcher_or_game(game_title)
         if opened:
             # 此时游戏已经打开
-            print("Game already started")
+            pigeon("Game already started")
             # 点击进入游戏
             wait_game_start(game_title)
             return True
@@ -247,7 +258,7 @@ def start_game(game_title = "崩坏：星穹铁道"):
             # 此时打开的是星穹铁道启动器
             # 点击启动游戏
             click_start_button(game_title = launcher_window)
-            print("start game")
+            pigeon("start game")
             # 点击进入游戏
             wait_game_start(game_title)
     elif gw.getWindowsWithTitle("米哈游启动器"): # 检查一下是不是米哈游启动器
@@ -260,16 +271,16 @@ def start_game(game_title = "崩坏：星穹铁道"):
         # 未打开
         # 打开启动器，现在要检查两种启动器——崩铁、米哈游
         launcher_window = ""
-        print("尝试启动崩铁启动器")
+        pigeon("尝试启动崩铁启动器")
         started, launcher_window = start_launcher(game_title=game_title) 
 
         if not started:
-            print("未启动崩铁启动器，尝试米哈游启动器")
+            pigeon("未启动崩铁启动器，尝试米哈游启动器")
             started, launcher_window = start_launcher(game_folder="miHoYo Launcher", game_title="米哈游启动器")
-            print("启动米哈游启动器")
+            pigeon("启动米哈游启动器")
             launcher_window = "米哈游启动器"
             if not started:
-                print("未启动米哈游启动器，启动器启动失败")
+                pigeon("未启动米哈游启动器，启动器启动失败")
                 return
         # 待启动器启动成功后启动游戏
         time.sleep(0.5)

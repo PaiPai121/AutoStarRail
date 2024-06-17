@@ -23,12 +23,33 @@ B = vgamepad.XUSB_BUTTON.XUSB_GAMEPAD_B
 X = vgamepad.XUSB_BUTTON.XUSB_GAMEPAD_X
 Y = vgamepad.XUSB_BUTTON.XUSB_GAMEPAD_Y
 
+
+button_mapping = {
+    UP: "UP",
+    DOWN: "DOWN",
+    LEFT: "LEFT",
+    RIGHT: "RIGHT",
+    START: "START",
+    BACK: "BACK",
+    GUIDE: "GUIDE",
+    LEFT_THUMB: "LEFT_THUMB",
+    RIGHT_THUMB: "RIGHT_THUMB",
+    LEFT_SHOULDER: "LEFT_SHOULDER",
+    RIGHT_SHOULDER: "RIGHT_SHOULDER",
+    A: "A",
+    B: "B",
+    X: "X",
+    Y: "Y"
+}
+
 class Gamepad:
-    def __init__(self):
+    def __init__(self,pigeon = None):
         # 初始化一个手柄
+        self.pigeon = pigeon
         self.gamepad = vgamepad.VX360Gamepad()
         # 初始化手柄状态
         self.reset_gamepad()
+
 
     def reset_gamepad(self):
         self.gamepad.reset()#键位扳机摇杆全部重置成初始状态
@@ -40,10 +61,14 @@ class Gamepad:
         time.sleep(duration + random.randint(0,int(0.05*100))/100)
         self.gamepad.release_button(button)
         self.gamepad.update()
+        if self.pigeon:
+            self.pigeon("click" + button_mapping[button])
 
     def press_button(self,button):
         self.gamepad.press_button(button)
         self.gamepad.update()
+        if self.pigeon:
+            self.pigeon("press" + button_mapping[button])
 
     def release_button(self,button):
         self.gamepad.release_button(button)
@@ -67,6 +92,8 @@ class Gamepad:
         self.gamepad.left_joystick_float(x_value, y_value)
         # 左摇杆XY轴  x_values和y_values改成-1.0到1.0之间的浮点值，可以精确到小数点后5位
         self.gamepad.update()
+        if self.pigeon:
+            self.pigeon("" + "Left joystick")
     
     def RIGHT_JOYSTCIK(self,theta,amplitude,ran_theta = 2*np.pi/25,ran_amp = 1/25):
         theta = theta + random.randint(0,int(ran_theta*100))/100
@@ -76,6 +103,8 @@ class Gamepad:
         self.gamepad.right_joystick_float(x_value, y_value)
         # 右摇杆XY轴  x_values和y_values改成-1.0到1.0之间的浮点值，可以精确到小数点后5位
         self.gamepad.update()
+        if self.pigeon:
+            self.pigeon("" + "Left joystick")
 
     def joystick_movement(self, theta=0, duration=0.5, amplitude=1):
         start_time = time.time()
@@ -86,7 +115,7 @@ class Gamepad:
             # 幅度
             amplitude_time = amplitude * (time.time() - start_time) / duration
 
-            gp.RIGHT_JOYSTCIK(theta_time, amplitude_time)
+            self.RIGHT_JOYSTCIK(theta_time, amplitude_time)
 
             time.sleep(0.01)
 

@@ -8,6 +8,13 @@ import pyautogui
 from PIL import ImageGrab
 
 
+# # 保存原始的print函数
+# original_print = print
+
+
+# # 替换print函数
+# print = pigeon
+
 class WinProcessor:
 
     @classmethod
@@ -87,3 +94,10 @@ class WinProcessor:
 
         else:
             print("Game not found")
+
+    
+    @classmethod
+    def pigeon(cls,message,func):
+        # 自定义逻辑
+        func(message)
+        print(message)
