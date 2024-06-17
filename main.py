@@ -20,10 +20,10 @@ gp = Gamepad()
 # get_nameless_honor()
 # stamina(window)
 
-
+from daily_tasks import get_nameless_honor,stamina
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = main_window_processor.MainWindow()
-    window.set_mission(start_game, daily.get_nameless_honor, daily.stamina)
+    window.set_mission(start_game, get_nameless_honor, stamina)
     window.show()
     sys.exit(app.exec())

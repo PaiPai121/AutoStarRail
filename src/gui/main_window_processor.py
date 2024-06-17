@@ -115,7 +115,7 @@ class MainWindow(QMainWindow):
         
 
         ## 邮件发送
-        if self.ui.checkBox.isChecked():
+        if self.ui.enable_email.isChecked():
             # 接受邮件发送
             sender = Email_sender(self.email,self.password)
             sender.send_email(self.ui.text_display.toPlainText())
