@@ -120,7 +120,12 @@ class MainWindow(QMainWindow):
         2:进阶材料
         3:遗器
         """
-        return [self.ui.materials_box_1.currentIndex(),self.ui.farm_item.currentIndex()]
+        res = [self.ui.materials_box_1.currentIndex()]
+        if res[0] <=1:
+            res.append(self.ui.farm_item.currentIndex())
+        else:
+            res.append(self.ui.farm_item.currentText())
+        return res
 
     @pyqtSlot()
     def on_thread_finished(self):

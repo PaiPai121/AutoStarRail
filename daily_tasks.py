@@ -140,40 +140,109 @@ class DailyTask:
         # 等待传送和加载界面
         wait_page_by_text(self.window, "挑战")
         self.pigeon("加载完成")
+        self.using_stamina(10)
+        # stamina = self.check_stamina() # 获取当前体力数值
+        # # 小本耗10
+        # while stamina > 10:
+        #     battle_times = 0
+        #     if stamina > 60:
+        #         # 拉满，六次扳机
+        #         battle_times = 6
+        #     else:
+        #         battle_times = int(np.floor(stamina/10))
+        #     for _ in range(battle_times):
+        #         self.gp.RIGHT_TRIGGER(1)
+        #         random_sleep(0.01)
+        #     self.gp.click_button(Y) # 开始，进入编队
+        #     random_sleep(0.5)
+        #     self.gp.click_button(Y) # 开始战斗
+
+        #     stamina -= battle_times * 10
+        #     wait_page_by_text(self.window, "退出关卡",timeout= 600)
+        #     if stamina > 60:
+        #         self.gp.click_button(Y) # 再来一次
+        #     elif stamina > 10:
+        #         self.gp.click_button(B) # 推出
+        #         random_sleep(0.5)
+        #         self.gp.click_button(A) # 再进入挑战界面
+        #     else:
+        #         self.gp.click_button(B) # 推出
+        # self.pigeon("体力清除完成")
+
+    def using_stamina(self,stamina_cost):
         stamina = self.check_stamina() # 获取当前体力数值
         # 小本耗10
-        while stamina > 10:
-            battle_times = 0
-            if stamina > 60:
-                # 拉满，六次扳机
-                battle_times = 6
-            else:
-                battle_times = int(np.floor(stamina/10))
-            for _ in range(battle_times):
-                self.gp.RIGHT_TRIGGER(1)
-                random_sleep(0.01)
-            self.gp.click_button(Y) # 开始，进入编队
-            random_sleep(0.5)
-            self.gp.click_button(Y) # 开始战斗
-
-            stamina -= battle_times * 10
-            wait_page_by_text(self.window, "退出关卡",timeout= 600)
-            if stamina > 60:
-                self.gp.click_button(Y) # 再来一次
-            elif stamina > 10:
-                self.gp.click_button(B) # 推出
+        count = 0
+        if stamina_cost == 10:
+            while stamina > 10:
+                battle_times = 0
+                if stamina > 60:
+                    # 拉满，六次扳机
+                    battle_times = 6
+                else:
+                    battle_times = int(np.floor(stamina/10))
+                for _ in range(battle_times):
+                    self.gp.RIGHT_TRIGGER(1)
+                    random_sleep(0.01)
+                self.gp.click_button(Y) # 开始，进入编队
                 random_sleep(0.5)
-                self.gp.click_button(A) # 再进入挑战界面
-            else:
-                self.gp.click_button(B) # 推出
-        self.pigeon("体力清除完成")
+                self.gp.click_button(Y) # 开始战斗
 
+                stamina -= battle_times * 10
+                wait_page_by_text(self.window, "退出关卡",timeout= 600)
+                count += 1
+                self.pigeon("完成战斗 "+str(count) + " 次")
+                if stamina > 60:
+                    self.gp.click_button(Y) # 再来一次
+                elif stamina > 10:
+                    self.gp.click_button(B) # 推出
+                    random_sleep(0.5)
+                    self.gp.click_button(A) # 再进入挑战界面
+                else:
+                    self.gp.click_button(B) # 推出
+        else:
+            while stamina > stamina_cost:
+                self.gp.click_button(Y) # 开始，进入编队
+                random_sleep(0.5)
+                self.gp.click_button(Y) # 开始战斗
+                random_sleep(0.5)
+                self.gp.click_button(X)
+                random_sleep(0.5)
+                self.gp.click_button(X)
+                random_sleep(0.5)
+                self.gp.click_button(X) # 确保凝滞虚影能打到怪
+                stamina -= stamina_cost
+                wait_page_by_text(self.window, "退出关卡",timeout= 600)
+                self.gp.click_button(B) # 推出
+                count += 1
+                self.pigeon("完成战斗 "+str(count) + " 次")
+                random_sleep(1)
+
+        self.pigeon("体力清除完成")
     def illusion(self,name):
+        '''
+        刷凝滞虚影
+        '''
         self.find_type("凝滞虚影")
         self.pigeon("找到凝滞虚影")
         self.find_dungeon(name)
         self.pigeon("找到" + name)
         self.gp.click_button(A)
+        wait_page_by_text(self.window, "挑战")
+        self.pigeon("加载完成")
+        self.using_stamina(30)
+
+
+    def Artifacts(self,name):
+        self.find_type("遗器")
+        self.pigeon("找到隧洞")
+        self.find_dungeon(name)
+        self.pigeon("找到" + name)
+        self.gp.click_button(A)
+        wait_page_by_text(self.window, "挑战")
+        self.pigeon("加载完成")
+        self.using_stamina(40)
+
     def clean_stamina(self,farm_info):
         """清体力"""
         self.window = self.wait_window("崩坏：星穹铁道")
@@ -186,9 +255,9 @@ class DailyTask:
             self.little_dungeon_10(farm_info)
         if farm_info[0] == 2:
             # 凝滞虚影
-            self.find_type("拟造花萼")
+            self.illusion(farm_info[1])
         if farm_info[0] == 3:
-            self.find_type("拟造花萼")
+            self.Artifacts(farm_info[1])
 
     def daily_task(self):
         # 打开每日实训界面
