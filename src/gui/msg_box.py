@@ -6,11 +6,12 @@ class MessageBox(QLabel):
     def __init__(self, text = "", parent=None):
         super().__init__(text, parent)
         self.setWindowFlags(Qt.WindowType.WindowStaysOnTopHint | Qt.WindowType.FramelessWindowHint)
-        self.setStyleSheet("background-color: rgba(0, 0, 0, 57); color: red;")
+        self.setStyleSheet("background-color: rgba(10, 10, 10, 128); color: red;")
         
         self.setGeometry(0, 0, 100, 30)  # 设置初始位置和大小
         self.set_font_size(20)
         self.adjustSizeToContent()
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
 
     def set_font_size(self, size):
         font = self.font()
@@ -24,11 +25,22 @@ class MessageBox(QLabel):
 
     def show(self):
         super().show()
-        self.move(0, 0)  # 每次显示时都移动到左上角
+        # self.move(0, 0)  # 每次显示时都移动到左上角
+        screen = QApplication.primaryScreen()
+        screen_geometry = screen.geometry()
+        window_geometry = self.frameGeometry()
+        x = screen_geometry.width() - window_geometry.width()
+        self.move(x, 500)  # 每次显示时都移动到右上角
+
 
     def resizeEvent(self, event):
         super().resizeEvent(event)
-        self.move(0, 0)  # 当窗口大小改变时，也移动到左上角
+        # self.move(0, 0)  # 当窗口大小改变时，也移动到左上角
+        screen = QApplication.primaryScreen()
+        screen_geometry = screen.geometry()
+        window_geometry = self.frameGeometry()
+        x = screen_geometry.width() - window_geometry.width()
+        self.move(x, 500)  # 当窗口大小改变时，也移动到右上角
 
     def adjustSizeToContent(self):
         font_metrics = QFontMetrics(self.font())

@@ -62,13 +62,13 @@ class Gamepad:
         self.gamepad.release_button(button)
         self.gamepad.update()
         if self.pigeon:
-            self.pigeon("click" + button_mapping[button])
+            self.pigeon("click " + button_mapping[button])
 
     def press_button(self,button):
         self.gamepad.press_button(button)
         self.gamepad.update()
         if self.pigeon:
-            self.pigeon("press" + button_mapping[button])
+            self.pigeon("press " + button_mapping[button])
 
     def release_button(self,button):
         self.gamepad.release_button(button)
