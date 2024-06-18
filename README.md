@@ -36,8 +36,8 @@ AutoStarRail是一个用于自动化的Python项目，旨在帮助用户在《�
 感谢以下贡献者对本项目做出的贡献
 
 <a href="https://github.com/PaiPai121/AutoStarRail/graphs/contributors">
-
-  <img src="https://contrib.rocks/image?repo=PaiPai121/AutoStarRail" />
+  <img src="https://avatars.githubusercontent.com/u/53391594?s=60&v=4" />
+  <img src="https://avatars.githubusercontent.com/u/141000129?s=60&v=4" />
 
 </a>
 
