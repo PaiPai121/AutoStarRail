@@ -63,13 +63,19 @@ class MainWindow(QMainWindow):
 
 
     def get_email_password(self):
-        with open('./config/credentials.txt', 'r') as file:
-            self.email = file.readline().strip()
-            self.password = file.readline().strip()
-            self.email_server = file.readline().strip()
-            self.email_port = file.readline().strip()
-            if file.readline().strip() == "1":
-                self.ui.enable_email.setChecked(True)
+        try:
+            with open('./config/credentials.txt', 'r') as file:
+                self.email = file.readline().strip()
+                self.password = file.readline().strip()
+                self.email_server = file.readline().strip()
+                self.email_port = file.readline().strip()
+                if file.readline().strip() == "1":
+                    self.ui.enable_email.setChecked(True)
+        except:
+            self.email = ""
+            self.password = ""
+            self.email_server = ""
+            self.email_port = ""
         self.ui.sender_email_edit.setText(self.email)
         self.ui.sender_password_edit.setText(self.password)
         self.ui.sender_email_server.setText(self.email_server)

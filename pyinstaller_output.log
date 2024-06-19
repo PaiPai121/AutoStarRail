@@ -1,0 +1,1319 @@
+282 INFO: PyInstaller: 6.8.0, contrib hooks: 2024.7
+282 INFO: Python: 3.11.8
+287 INFO: Platform: Windows-10-10.0.22631-SP0
+287 INFO: Python environment: c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv
+288 INFO: wrote C:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\main.spec
+292 INFO: Module search paths (PYTHONPATH):
+['c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Scripts\\pyinstaller.exe',
+ 'C:\\Users\\HunterAndDragon\\AppData\\Local\\Programs\\Python\\Python311\\python311.zip',
+ 'C:\\Users\\HunterAndDragon\\AppData\\Local\\Programs\\Python\\Python311\\DLLs',
+ 'C:\\Users\\HunterAndDragon\\AppData\\Local\\Programs\\Python\\Python311\\Lib',
+ 'C:\\Users\\HunterAndDragon\\AppData\\Local\\Programs\\Python\\Python311',
+ 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv',
+ 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages',
+ 'C:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail']
+535 INFO: checking Analysis
+536 INFO: Building Analysis because Analysis-00.toc is non existent
+537 INFO: Running Analysis Analysis-00.toc
+537 INFO: Target bytecode optimization level: 0
+537 INFO: Initializing module dependency graph...
+537 INFO: Caching module graph hooks...
+544 INFO: Analyzing base_library.zip ...
+1399 INFO: Loading module hook 'hook-heapq.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+1450 INFO: Loading module hook 'hook-encodings.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+2563 INFO: Loading module hook 'hook-pickle.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+3408 INFO: Caching module dependency graph...
+3475 INFO: Looking for Python shared library...
+3477 INFO: Using Python shared library: C:\Users\HunterAndDragon\AppData\Local\Programs\Python\Python311\python311.dll
+3477 INFO: Analyzing C:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\main.py
+3480 INFO: Loading module hook 'hook-PyQt6.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+3542 INFO: Loading module hook 'hook-PyQt6.QtWidgets.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+3611 INFO: Loading module hook 'hook-PyQt6.QtGui.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+3767 INFO: Loading module hook 'hook-platform.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+3803 INFO: Loading module hook 'hook-numpy.py' from 'C:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\numpy\\_pyinstaller'...
+4199 INFO: Loading module hook 'hook-difflib.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+4366 INFO: Loading module hook 'hook-multiprocessing.util.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+4457 INFO: Loading module hook 'hook-xml.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+5029 INFO: Loading module hook 'hook-sysconfig.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+5152 INFO: Loading module hook 'hook-psutil.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks'...
+5927 INFO: Loading module hook 'hook-cv2.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks'...
+6390 INFO: Loading module hook 'hook-_tkinter.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+6407 INFO: Loading module hook 'hook-PIL.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+6475 INFO: Loading module hook 'hook-PIL.Image.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+7014 INFO: Loading module hook 'hook-packaging.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+7048 INFO: Loading module hook 'hook-PIL.ImageFilter.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+7790 INFO: Loading module hook 'hook-astor.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks'...
+7900 INFO: Loading module hook 'hook-setuptools.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+9160 INFO: Processing pre-safe import module hook distutils from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module\\hook-distutils.py'.
+9160 INFO: Processing pre-find module path hook distutils from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path\\hook-distutils.py'.
+9508 INFO: Loading module hook 'hook-distutils.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+9539 INFO: Loading module hook 'hook-distutils.util.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+9720 INFO: Loading module hook 'hook-pkg_resources.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+12075 INFO: Loading module hook 'hook-xml.etree.cElementTree.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+12466 INFO: Loading module hook 'hook-lxml.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks'...
+12741 INFO: Loading module hook 'hook-lxml.etree.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks'...
+13021 INFO: Loading module hook 'hook-certifi.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks'...
+13285 INFO: Loading module hook 'hook-anyio.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\stdhooks'...
+14190 INFO: Loading module hook 'hook-pandas.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+14659 INFO: Loading module hook 'hook-pytz.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+15688 INFO: Loading module hook 'hook-scipy.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+16339 INFO: Loading module hook 'hook-scipy.linalg.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+16418 INFO: Loading module hook 'hook-scipy.special._ufuncs.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+16467 INFO: Loading module hook 'hook-scipy.special._ellip_harm_2.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+16732 INFO: Loading module hook 'hook-scipy.sparse.csgraph.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+16773 INFO: Loading module hook 'hook-matplotlib.py' from 'c:\\Users\\HunterAndDragon\\Documents\\kzz_work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Scripts\pyinstaller.exe\__main__.py", line 7, in <module>
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\__main__.py", line 231, in _console_script_run
+    run()
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\__main__.py", line 215, in run
+    run_build(pyi_config, spec_file, **vars(args))
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\__main__.py", line 70, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\building\build_main.py", line 1216, in main
+    build(specfile, distpath, workpath, clean_build)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\building\build_main.py", line 1156, in build
+    exec(code, spec_namespace)
+  File "C:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\main.spec", line 4, in <module>
+    a = Analysis(
+        ^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\building\build_main.py", line 556, in __init__
+    self.__postinit__()
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\building\datastruct.py", line 184, in __postinit__
+    self.assemble()
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\building\build_main.py", line 696, in assemble
+    program_scripts.append(self.graph.add_script(script))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 268, in add_script
+    self._top_script_node = super().add_script(pathname)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1160, in add_script
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2257, in _safe_import_hook
+    self.import_hook(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1271, in import_hook
+    for target_submodule in self._import_importable_package_submodules(
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1520, in _import_importable_package_submodules
+    submodule = self._safe_import_module(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1245, in import_hook
+    submodule = self._safe_import_module(head, mname, submodule)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 437, in _safe_import_hook
+    ret_modules = super()._safe_import_hook(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2048, in _safe_import_hook
+    target_modules = self.import_hook(
+                     ^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1232, in import_hook
+    target_package, target_module_partname = self._find_head_package(
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1411, in _find_head_package
+    target_package = self._safe_import_module(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 501, in _safe_import_module
+    return super()._safe_import_module(module_basename, module_name, parent_package)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1792, in _safe_import_module
+    self._process_imports(n)
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2591, in _process_imports
+    target_modules = self._safe_import_hook(*import_info, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 368, in _safe_import_hook
+    excluded_imports = self._find_all_excluded_imports(source_module.identifier)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\analysis.py", line 356, in _find_all_excluded_imports
+    excluded_imports.update(module_hook.excludedimports)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\imphook.py", line 316, in __getattr__
+    self._load_hook_module()
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\depend\imphook.py", line 383, in _load_hook_module
+    self._hook_module = importlib_load_source(self.hook_module_name, self.hook_filename)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\compat.py", line 583, in importlib_load_source
+    mod_loader.exec_module(mod)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\hooks\hook-matplotlib.py", line 24, in <module>
+    (mpl_data_dir(), "matplotlib/mpl-data"),
+     ^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\isolated\_parent.py", line 420, in wrapped
+    return call(function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\isolated\_parent.py", line 389, in call
+    return isolated.call(function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\isolated\_parent.py", line 319, in call
+    raise RuntimeError(f"Child process call to {function.__name__}() failed with:\n" + output)
+RuntimeError: Child process call to mpl_data_dir() failed with:
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\isolated\_child.py", line 63, in run_next_command
+    output = function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\PyInstaller\hooks\hook-matplotlib.py", line 19, in mpl_data_dir
+    import matplotlib
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\matplotlib\__init__.py", line 276, in <module>
+    _check_versions()
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\matplotlib\__init__.py", line 270, in _check_versions
+    module = importlib.import_module(modname)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HunterAndDragon\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\HunterAndDragon\Documents\kzz_work_console\AutoStarRail\.venv\Lib\site-packages\kiwisolver\__init__.py", line 8, in <module>
+    from ._cext import (
+ModuleNotFoundError: No module named 'kiwisolver._cext'
