@@ -4,7 +4,7 @@ from email.header import Header
 
 
 class Email_sender:
-    def __init__(self,username = "",password = "",server = 'smtp.163.com',port = 465) -> None:
+    def __init__(self,username = "",password = "",server = 'smtp.163.com',port = 465, pigeon = print) -> None:
         # 网易邮箱的SMTP服务器地址和端口
         self.smtp_server = server
         self.smtp_port = port  # 网易邮箱SMTP服务端口通常为465
@@ -17,6 +17,7 @@ class Email_sender:
         self.username = username
         # self.receiver = username
         self.password = password
+        self.pigeon = pigeon
         # 邮件主题和正文
         # self.subject = '自动星铁'
         # self.body = '这是一封测试邮件。'
@@ -31,15 +32,15 @@ class Email_sender:
         # 创建一个MIMEText邮件对象
         message = MIMEText(body, 'plain', 'utf-8')
         message['From'] = Header(self.username, 'utf-8')
-        message['To'] = Header(self.username, 'utf-8')
+        message['To'] = Header(self.username)
         message['Subject'] = Header("自动星铁message", 'utf-8')
         try:
             # 连接SMTP服务器
             server = smtplib.SMTP_SSL(self.smtp_server, self.smtp_port)
             server.login(self.username, self.password)  # 登录SMTP服务器
             server.sendmail(self.username, self.username, message.as_string())  # 发送邮件
-            print("邮件发送成功")
+            self.pigeon("邮件发送成功")
         except smtplib.SMTPException as e:
-            print("Error: 无法发送邮件", e)
+            self.pigeon("Error: 无法发送邮件", e)
         finally:
             server.quit()  # 断开与SMTP服务器的连接
