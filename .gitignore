@@ -1,4 +1,6 @@
 /assets
+/venv
+/.idea
 test.py
 .DS_Store
 /output_images2
