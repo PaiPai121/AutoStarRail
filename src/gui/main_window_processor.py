@@ -8,7 +8,8 @@ from src.gui.msg_box import MessageBox
 
 from src.gui.email_sender import Email_sender
 from src.gui.win_thread import TaskWorker
-
+from start_game import StartGame
+import json
 ### 通过update和append message向窗口发送消息。
 
 class MainWindow(QMainWindow):
@@ -24,7 +25,7 @@ class MainWindow(QMainWindow):
         self.message = []
         self.message_len=10 # 最多5行message 
         self.append_message("启动")
-
+        self.ui.start_button.setText("Start")
         '''
         自动化任务的初始化
         '''
@@ -58,9 +59,17 @@ class MainWindow(QMainWindow):
         self.ui.message_checkBox.stateChanged.connect(self.on_message_checkbox_changed)
         self.ui.materials_box_1.setCurrentIndex(3)
 
-        # self.stop_task_signal = pyqtSignal() 
-        # self.stop_task_signal.connect(self.task_worker.stop)  # 连接停止信号到TaskWorker的stop方法
-
+        # 保存内容的加载
+        try:
+            with open('./config/settings.json', 'r') as file:
+                settings = json.load(file)
+                self.ui.pioneer_power.setChecked(settings["pioneer_power"])
+                self.ui.daily_task.setChecked(settings["daily_task"])
+                self.ui.nameless_honor.setChecked(settings["nameless_honor"])
+                self.ui.materials_box_1.setCurrentIndex(settings["material_box_1"])
+                self.ui.farm_item.setCurrentIndex(settings["farm_item"])
+        except:
+            self.append_message("无保存记录")
 
     def get_email_password(self):
         try:
@@ -148,37 +157,40 @@ class MainWindow(QMainWindow):
         if self.worker_thread and self.worker_thread.isRunning():
             self.ui.start_button.setEnabled(False)
             self.ui.start_button.setText("Start")
-            self.task_worker.stop()
+            # self.task_worker.stop()
             
-            self.stop_task_signal.emit()  # 发出停止信号
-
+            # self.stop_task_signal.emit()  # 发出停止信号
+            # self.worker_thread.killTimer
             self.worker_thread.quit()
             self.worker_thread.wait()
             self.worker_thread = None
+
             self.ui.start_button.setEnabled(True)
         else:
-            self.get_task_list() # 获取任务列表
             self.ui.start_button.setText("Stop")
-            self.worker_thread = QThread()
-            self.task_worker = TaskWorker(self.to_do,self.get_farm())
-            self.task_worker.moveToThread(self.worker_thread)
-            self.task_worker.message_signal.connect(self.append_message)  # 连接消息信号
-            self.task_worker.finished_signal.connect(self.on_thread_finished)
-            self.task_worker.finished_signal.connect(self.worker_thread.quit) # ？
-            # self.task_worker.stop_signal.connect(self.task_worker.stop)  # 新增：连接停止信号到stop方法
-            self.worker_thread.started.connect(self.task_worker.run)
-            self.worker_thread.finished.connect(lambda: setattr(self, 'worker_thread', None))
-
-            # self.worker_thread.started.connect(lambda: self.stop_task_signal.connect(self.task_worker.stop))  # 启动线程后建立连接
-            # self.worker_thread.finished.connect(lambda: self.stop_task_signal.disconnect(self.task_worker.stop))  # 线程结束后断开连接
-
-            self.worker_thread.start()
-
+            self.get_task_list() # 获取任务列表
+            if self.to_do:
+                try:
+                    self.worker_thread = QThread()
+                    self.task_worker = TaskWorker(self.to_do,self.get_farm())
+                    self.task_worker.moveToThread(self.worker_thread)
+                    self.task_worker.message_signal.connect(self.append_message)  # 连接消息信号
+                    self.task_worker.finished_signal.connect(self.on_thread_finished)
+                    self.task_worker.finished_signal.connect(self.worker_thread.quit) # ？
+                    # self.task_worker.stop_signal.connect(self.task_worker.stop)  # 新增：连接停止信号到stop方法
+                    self.worker_thread.started.connect(self.task_worker.run)
+                    self.worker_thread.finished.connect(lambda: setattr(self, 'worker_thread', None))
+                    self.worker_thread.start()
+                except Exception as e:
+                    self.append_message(f"Error: {str(e)}")
+            else:
+                self.on_thread_finished()
         ## 邮件发送
         if self.ui.enable_email.isChecked():
             # 接受邮件发送
             sender = Email_sender(self.email,self.password,pigeon=self.append_message)
             sender.send_email(self.ui.text_display.toPlainText())
+        pass
 
 
     @pyqtSlot()
@@ -214,6 +226,20 @@ class MainWindow(QMainWindow):
 
     @pyqtSlot()
     def closeEvent(self, event):
+        # 保存当前状态
+        settings = {
+            "pioneer_power" :self.ui.pioneer_power.isChecked(),
+            "daily_task" :self.ui.daily_task.isChecked(),
+            "nameless_honor" :self.ui.nameless_honor.isChecked(),
+            "material_box_1" : self.ui.materials_box_1.currentIndex(),  
+            "farm_item" : self.ui.farm_item.currentIndex(),
+        }
+        with open('./config/settings.json', 'w') as file:
+            json.dump(settings, file)
+        log_content = self.ui.text_display.toPlainText()
+        log_file_path = "log.txt"
+        with open(log_file_path,"w") as log_file:
+            log_file.write(log_content)
         self.msgBox.close()  # 当主窗口关闭时，也关闭消息框
         super().closeEvent(event)
 

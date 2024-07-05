@@ -2,8 +2,7 @@
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtGui import QIcon
 import sys
-# from daily_tasks import DailyTask
-# from start_game import StartGame
+
 from utils.gamepad import Gamepad
 from src.gui import main_window_processor
 

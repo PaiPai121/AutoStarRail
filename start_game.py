@@ -2,12 +2,12 @@ import json
 import os
 import subprocess
 import time
-
+from utils.gamepad.gamepad_controller import *
 import pygetwindow as gw
 from controller.target_detector import *
 from utils.win_processor import WinProcessor
 from utils.general_processor import get_screenshot,findText,click_position
-
+from utils.general_processor.handler import random_sleep
 # 给每个函数一个pigeon，用来向main window传递信息
 # from 
 # my_package/module_a.py
@@ -21,8 +21,9 @@ from utils.general_processor import get_screenshot,findText,click_position
 
 
 class StartGame:
-    def __init__(self, pigeon = print):
+    def __init__(self, pigeon = print,gp = None):
         self.pigeon = pigeon
+        self.gp = gp
     def start_launcher(self, game_folder = 'Star Rail',game_executable = 'launcher.exe',game_title = "崩坏：星穹铁道"):
         """
         # 游戏的安装文件夹名称
@@ -144,14 +145,35 @@ class StartGame:
 
 
     def click_enter_game(self,game_title):
+        
         window = gw.getWindowsWithTitle(game_title)[0]
         window.activate()
-        screenshot,x,y,_,_ = get_screenshot(window)
-        find,start_game_positon = findText(screenshot, "点击进入")
-        if find:
-            click_position(window,start_game_positon)
-            return True
-        return False
+        if self.gp:
+            self.pigeon("Gamepad detected")
+            random_sleep(0.5)
+            self.gp.click_button(A)
+            random_sleep(0.5)
+            self.gp.click_button(A)
+
+            random_sleep(0.5)
+            self.gp.click_button(A)
+
+            random_sleep(0.5)
+            self.gp.click_button(A)
+            # 判断是否进入游戏
+
+            screenshot,x,y,_,_ = get_screenshot(window)
+            find,start_game_positon = findText(screenshot, "点击进入")
+            return find
+            # return True
+        
+        else:
+            screenshot,x,y,_,_ = get_screenshot(window)
+            find,start_game_positon = findText(screenshot, "点击进入")
+            if find:
+                click_position(window,start_game_positon)
+                return True
+            return False
 
 
     def check_download(self,figure,game_title):
@@ -214,8 +236,9 @@ class StartGame:
                 # 点击进入游戏
                 window = gw.getWindowsWithTitle(game_title)[0]
                 figure,_,_,_,_ = get_screenshot(window)
-                findText(figure,"点击进入")
-                # self.wait_game_start(game_title) # 该步有些问题
+                find, _ =findText(figure,"点击进入")
+                if find:
+                    self.wait_game_start(game_title) # 该步有些问题
                 return True
             else:
                 # 此时打开的是星穹铁道启动器
@@ -262,8 +285,10 @@ class StartGame:
 
 
 if __name__ == "__main__":
-    sg = StartGame(print)
-    sg.start_game()
+    gp = Gamepad(print)
+    sg = StartGame(print,gp)
+
+    sg.wait_game_start("崩坏：星穹铁道")
 
     ## 点击进入
     ## 退出

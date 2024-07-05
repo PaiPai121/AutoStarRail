@@ -6,7 +6,7 @@ from utils.win_processor import WinProcessor
 from paddleocr import PaddleOCR
 import numpy as np
 import cv2
-
+from utils.gamepad.gamepad_controller import *
 # from utils
 
 class TargetDetector:
@@ -66,7 +66,7 @@ class TargetDetector:
         return average_gray_value
         
 
-    def search_button(self, btn_text, action):
+    def search_button(self, btn_text, action,depth = 0):
         """
         查找相应按钮
         :param btn_text: 目标按钮名称
@@ -75,22 +75,43 @@ class TargetDetector:
         """
         figure, _, _, _, _ = self.win_action.get_screenshot(self.window)
         find, _ = self.findText(figure,btn_text)
+        if depth > 10:
+            depth = 0
+            if action == RIGHT_SHOULDER:
+                action = LEFT_SHOULDER
+            elif action == LEFT_SHOULDER:
+                action = RIGHT_SHOULDER
+            elif action == UP:
+                action = DOWN
+            elif action == DOWN:
+                action = UP
         if find:
             print(f'找到{btn_text}')
             return True
         else:
             self.gp.click_button(action)
             time.sleep(0.2 + random.randint(0, 10) / 100)
-            return self.search_button(btn_text, action)
+            return self.search_button(btn_text, action,depth= depth + 1)
         
-    def find_highlight(self,btn_text, action = None):
+    def find_highlight(self,btn_text, action = None, depth = 0):
+        depth += 1
+        if depth > 10:
+            depth = 0
+            if action == RIGHT_SHOULDER:
+                action = LEFT_SHOULDER
+            elif action == LEFT_SHOULDER:
+                action = RIGHT_SHOULDER
+            elif action == UP:
+                action = DOWN
+            elif action == DOWN:
+                action = UP
         # 转到灰度上看灰度值。先截取字附近的区域
         figure, _, _, _, _ = self.win_action.get_screenshot(self.window)
         find, pos = self.findText(figure,btn_text)
         if not find: # 没找到
             self.gp.click_button(action)
             time.sleep(0.2 + random.randint(0, 10) / 100)
-            return self.find_highlight(btn_text, action)
+            return self.find_highlight(btn_text, action,depth )
 
         ave_gray = self.get_average_gray_value(figure,pos)
         if ave_gray < 100: # 高亮-黑色
@@ -99,7 +120,7 @@ class TargetDetector:
         else:
             self.gp.click_button(action)
             time.sleep(0.2 + random.randint(0, 10) / 100)
-            return self.find_highlight(btn_text, action)
+            return self.find_highlight(btn_text, action,depth)
 
 
     def find_dungeon(self,btn_text, action = None):
@@ -107,13 +128,26 @@ class TargetDetector:
         # self.gp.click_button(action)
         if self.detect_dungeon_boxes(figure,btn_text):
             print('已选中：' + btn_text)
+            return True
         else:
             self.gp.click_button(action)
             time.sleep(0.2 + random.randint(0, 10) / 100)
             return self.find_dungeon(btn_text, action)
 
 
-    def detect_dungeon_boxes(self,image,text):
+    def find_daily_weituo(self):
+        figure, _, _, _, _ = self.win_action.get_screenshot(self.window)
+        finds = self.detect_dungeon_boxes(figure,["次委托","前往"],area_ratio=0.2)
+        if finds[0]:
+            print("finded")
+            time.sleep(0.1 + random.randint(0, 10) / 100)
+            return finds
+        else:
+            self.gp.click_button(RIGHT)
+            time.sleep(0.1 + random.randint(0, 10) / 100)
+            return self.find_daily_weituo()
+
+    def detect_dungeon_boxes(self,image,text, area_ratio,show =False):
         # 可以找出当前高亮的选择区域
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         edges = cv2.Canny(gray, threshold1=100, threshold2=200)
@@ -144,11 +178,20 @@ class TargetDetector:
             x, y, w, h = cv2.boundingRect(max_contour)
             # 截取该矩形区域
             cropped_image = image[y:y+h, x:x+w]
-            find, pos = self.findText(cropped_image,text)
+            if isinstance(text, str):
+                find, pos = self.findText(cropped_image,text)
+            elif isinstance(text,list) > 1:
+                find = []
+                for t in text:
+                    f, pos = self.findText(cropped_image,t)
+                    find.append(f)
+            else:
+                return False
             # 显示截取的图像
-            # cv2.imshow('Cropped Rectangle', cropped_image)
-            # cv2.waitKey(0)
-            # cv2.destroyAllWindows()
+            if show:
+                cv2.imshow('Cropped Rectangle', cropped_image)
+                cv2.waitKey(0)
+                cv2.destroyAllWindows()
             return find
         else:
             # print("Not found.")

@@ -1,39 +1,81 @@
 from utils.gamepad.gamepad_controller import *
 from controller.target_detector import *
 from start_game import *
-from utils.general_processor.handler import random_sleep,wait_page_by_text,findText_with_full_Text
+from utils.general_processor.handler import random_sleep,wait_page_by_text,findText_with_full_Text,get_screenshot
 
 class DailyTask:
     def __init__(self, window ,pigeon = print):
         self.gp = Gamepad(pigeon = pigeon)
         self.pigeon = pigeon
-        self.window = window
-    # 无名勋礼
-    def get_nameless_honor(self):
+        try:
+            self.window = gw.getWindowsWithTitle("崩坏：星穹铁道")[0]
+        except:
+            self.window = None
+            self.start_game()
+            self.window = gw.getWindowsWithTitle("崩坏：星穹铁道")[0]
+    def start_game(self):
+        SG = StartGame(pigeon= self.pigeon,gp = self.gp)
+        self.pigeon("start game with gamepad")
+        SG.start_game()
+
+    def open_nameless_honor(self):
         # 打开勋礼页面
         self.gp.press_button(LEFT_SHOULDER)
         self.gp.joystick_movement(np.pi * 3 / 4)
-        time.sleep(0.8)
+        random_sleep(0.8)
         self.gp.joystick_movement(amplitude=0)
         self.gp.release_button(LEFT_SHOULDER)
-        time.sleep(0.1)
-        self.gp.click_button(RIGHT_SHOULDER)
-        time.sleep(0.1)
+        random_sleep(1)
+                
+        figure,_,_,_,_ = get_screenshot(self.window)
+        find,_,_ = findText_with_full_Text(figure,text = "无名勋礼")
+        if find:
+            self.pigeon("勋礼已经打开")
+        else:
+            self.gp.press_button(B)
+            random_sleep(0.3)
+            self.gp.press_button(B)
+            random_sleep(0.3)
+            self.gp.press_button(B)
+            random_sleep(0.3)
+            self.open_star_guide()
+        # self.pigeon("打开星际和平指南")
+        random_sleep(0.9)
+
+    # 无名勋礼
+    def get_nameless_honor(self):
+        # 打开勋礼页面
+        self.open_nameless_honor()
+
+        # 已经打开后，通过手柄切换标签找到对应的page
+        if TargetDetector(self.window,self.gp).search_button("任务", RIGHT_SHOULDER):
+            self.pigeon("找到：任务")
+        else:
+            self.pigeon("未找到：任务")
+        # 切换到领取页面
+        # self.gp.click_button(RIGHT_SHOULDER)
+        random_sleep(0.1)
         self.gp.click_button(Y)
-        time.sleep(0.1)
-        self.gp.click_button(LEFT_SHOULDER)
-        time.sleep(0.1)
+        random_sleep(0.1)
+        # 已经打开后，通过手柄切换标签找到对应的page
+        if TargetDetector(self.window,self.gp).search_button("奖励", LEFT_SHOULDER):
+            self.pigeon("找到：奖励")
+        else:
+            self.pigeon("未找到：奖励")
+        random_sleep(0.1)
         self.gp.click_button(Y)
 
-        time.sleep(0.1)
+        # 离开页面
+        random_sleep(0.1)
         self.gp.click_button(B)
-        time.sleep(0.1)
+        random_sleep(0.1)
         self.gp.click_button(B)
-        time.sleep(0.1)
+        random_sleep(0.1)
         self.gp.click_button(B)
-        time.sleep(0.1)
+        random_sleep(0.1)
 
     def find_page(self,tag = "生存索引"):
+        # self.pigeon("开始寻找 "+tag)
         # 已经打开星际和平指南后，通过手柄切换标签找到对应的page
         if TargetDetector(self.window,self.gp).search_button(tag, RIGHT_SHOULDER):
             self.pigeon("找到" + tag)
@@ -54,7 +96,7 @@ class DailyTask:
         if TargetDetector(self.window,self.gp).find_dungeon(dungeon, DOWN):
             self.pigeon("找到" + dungeon)
         else:
-            self.pigeon("未找到" + dungeon)
+            self.pigeon("未找到目标")
         pass
 
 
@@ -63,11 +105,25 @@ class DailyTask:
         # 打开星际和平指南
         self.gp.press_button(LEFT_SHOULDER)
         self.gp.joystick_movement(np.pi * 1 / 4, duration= 1) # 移动到指南
-        time.sleep(0.8)
+        random_sleep(0.8)
         self.gp.joystick_movement(amplitude=0)
         self.gp.release_button(LEFT_SHOULDER)
-        self.pigeon("打开星际和平指南")
-        time.sleep(0.9)
+        
+        random_sleep(1)
+        figure,_,_,_,_ = get_screenshot(self.window)
+        find,_,_ = findText_with_full_Text(figure,text = "星际和平指南")
+        if find:
+            self.pigeon("和平指南已经打开")
+        else:
+            self.gp.press_button(B)
+            random_sleep(0.3)
+            self.gp.press_button(B)
+            random_sleep(0.3)
+            self.gp.press_button(B)
+            random_sleep(0.3)
+            self.open_star_guide()
+        # self.pigeon("打开星际和平指南")
+        random_sleep(0.9)
 
     def check_stamina(self):
         # 检查体力
@@ -141,35 +197,9 @@ class DailyTask:
         wait_page_by_text(self.window, "挑战")
         self.pigeon("加载完成")
         self.using_stamina(10)
-        # stamina = self.check_stamina() # 获取当前体力数值
-        # # 小本耗10
-        # while stamina > 10:
-        #     battle_times = 0
-        #     if stamina > 60:
-        #         # 拉满，六次扳机
-        #         battle_times = 6
-        #     else:
-        #         battle_times = int(np.floor(stamina/10))
-        #     for _ in range(battle_times):
-        #         self.gp.RIGHT_TRIGGER(1)
-        #         random_sleep(0.01)
-        #     self.gp.click_button(Y) # 开始，进入编队
-        #     random_sleep(0.5)
-        #     self.gp.click_button(Y) # 开始战斗
 
-        #     stamina -= battle_times * 10
-        #     wait_page_by_text(self.window, "退出关卡",timeout= 600)
-        #     if stamina > 60:
-        #         self.gp.click_button(Y) # 再来一次
-        #     elif stamina > 10:
-        #         self.gp.click_button(B) # 推出
-        #         random_sleep(0.5)
-        #         self.gp.click_button(A) # 再进入挑战界面
-        #     else:
-        #         self.gp.click_button(B) # 推出
-        # self.pigeon("体力清除完成")
 
-    def using_stamina(self,stamina_cost):
+    def using_stamina(self,stamina_cost,find_tag = "A"):
         stamina = self.check_stamina() # 获取当前体力数值
         # 小本耗10
         count = 0
@@ -196,7 +226,9 @@ class DailyTask:
                     self.gp.click_button(Y) # 再来一次
                 elif stamina > 10:
                     self.gp.click_button(B) # 推出
-                    random_sleep(0.5)
+                    
+                    
+                    random_sleep(2)
                     self.gp.click_button(A) # 再进入挑战界面
                 else:
                     self.gp.click_button(B) # 推出
@@ -213,12 +245,25 @@ class DailyTask:
                 self.gp.click_button(X) # 确保凝滞虚影能打到怪
                 stamina -= stamina_cost
                 wait_page_by_text(self.window, "退出关卡",timeout= 600)
-                self.gp.click_button(B) # 推出
+                self.gp.click_button(B) # 退出
                 count += 1
                 self.pigeon("完成战斗 "+str(count) + " 次")
+                # random_sleep(5)w
+
+                wait_page_by_text(self.window,find_tag) # wait 多久？
+                self.pigeon("find:"+find_tag)
                 random_sleep(1)
 
+                self.gp.click_button(A) # 进入副本
+                random_sleep(0.5)
+
         self.pigeon("体力清除完成")
+        self.gp.click_button(B) # 进入副本
+        random_sleep(0.5)
+        self.gp.click_button(B) # 进入副本
+        random_sleep(0.3)
+        self.gp.click_button(B) # 进入副本
+        random_sleep(0.7)
     def illusion(self,name):
         '''
         刷凝滞虚影
@@ -230,18 +275,18 @@ class DailyTask:
         self.gp.click_button(A)
         wait_page_by_text(self.window, "挑战")
         self.pigeon("加载完成")
-        self.using_stamina(30)
+        self.using_stamina(30,name)
 
 
     def Artifacts(self,name):
         self.find_type("遗器")
-        self.pigeon("找到隧洞")
+        # self.pigeon("找到隧洞")
         self.find_dungeon(name)
-        self.pigeon("找到" + name)
+        # self.pigeon("找到" + name)
         self.gp.click_button(A)
         wait_page_by_text(self.window, "挑战")
         self.pigeon("加载完成")
-        self.using_stamina(40)
+        self.using_stamina(40,name)
 
     def clean_stamina(self,farm_info):
         """清体力"""
@@ -250,6 +295,11 @@ class DailyTask:
         # return
         # 先打开指南
         self.open_star_guide()
+
+        random_sleep(0.5)
+        # 
+        self.pigeon("寻找生存--索引页面")
+        self.find_page("生存索引")
         if farm_info[0] == 0 or farm_info[0] == 1:
             # 花萼
             self.little_dungeon_10(farm_info)
@@ -259,14 +309,81 @@ class DailyTask:
         if farm_info[0] == 3:
             self.Artifacts(farm_info[1])
 
+    def check_daily_task(self):
+        figure,_,_,_,_ = get_screenshot(self.window)
+        find,_,_ = findText_with_full_Text(figure,text = "进行中")
+        find2,_,_ = findText_with_full_Text(figure,text = "前往")
+        if find or find2:
+            self.pigeon("仍有进行中日常")
+        return find or find2
+    
     def daily_task(self):
         # 打开每日实训界面
         self.open_star_guide()
+        self.pigeon("寻找实训界面")
         self.find_page("每日实训")
-        for i in range(5):
+
+        # 检查今日日常
+        find = self.check_daily_task()
+        if not find:
+            self.pigeon("日常已经全部完成")
+            self.gp.click_button(UP)
+            random_sleep(0.3)
+            self.gp.click_button(A)
+            return True
+        
+        ## 领取所有完成的任务
+        figure,_,_,_,_ = get_screenshot(self.window)
+        find,_,_ = findText_with_full_Text(figure,text = "领取")
+        self.gp.click_button(DOWN)
+        random_sleep(0.3)
+        while find:
             self.gp.click_button(A)
             random_sleep(0.2)
-        self.gp.click_button(B)
+            figure,_,_,_,_ = get_screenshot(self.window)
+            find,_,_ = findText_with_full_Text(figure,text = "领取")
+
+        ## 看看委托？
+        finds = TargetDetector(self.window,self.gp).find_daily_weituo()
+        if finds[0]:
+            # 找到委托tag
+            if finds[1]:
+                self.pigeon("委托未进行")
+                random_sleep(0.5)
+                self.gp.click_button(A)
+                # 还没进行委托
+                random_sleep(0.5)
+                figure,_,_,_,_ = get_screenshot(self.window)
+                find,_ = findText(figure,text = "一键领取")
+                random_sleep(1)
+                if find:
+                    # 委托可领取
+                    self.pigeon("委托可领取")
+  
+                    random_sleep(1)
+                    self.gp.click_button(X)
+                    random_sleep(1)
+                    self.gp.click_button(Y)
+                    random_sleep(1)
+                else:
+                    # 不可领取
+                    self.pigeon("委托不可领取")
+                self.gp.click_button(B)
+                # 完成重新委托
+            else:
+                self.pigeon("委托已完成")
+        random_sleep(0.2)
+        self.gp.click_button(UP)
+        random_sleep(0.2)
+        self.gp.click_button(UP)
+        random_sleep(0.2)
+        self.gp.click_button(A)
+        random_sleep(0.2)
+        self.gp.click_button(A)
+        # 离开页面
+        for i in range(3):
+            random_sleep(0.1)
+            self.gp.click_button(B)
 
 
 
@@ -282,16 +399,16 @@ class DailyTask:
             except IndexError:
                 # 如果窗口没有找到，继续尝试
                 pass
-            time.sleep(0.3)  # 等待1秒后再尝试
+            random_sleep(0.3)  # 等待1秒后再尝试
 
 
 def main(game_title="崩坏：星穹铁道"):
     window = gw.getWindowsWithTitle(game_title)[0]
     window.activate()
     daily = DailyTask(window)
-    # daily.stamina()
-    # daily.find_dungeon("野焰")
-    daily.clean_stamina([0,0])
+
+    # daily.daily_task()
+    daily.clean_stamina([3,"药使"])
 
 
 if __name__ == "__main__":

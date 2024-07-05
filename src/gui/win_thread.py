@@ -14,8 +14,8 @@ class TaskWorker(QObject):
         super().__init__()
         self._stop_requested = False
         self.task_list = task_list
-        self.game_starter = StartGame(pigeon = self.message_signal.emit)
-        self.daily_tasker = DailyTask(gw.getWindowsWithTitle("崩坏：星穹铁道")[0],pigeon = self.message_signal.emit)
+        # self.game_starter = StartGame(pigeon = self.message_signal.emit)
+        self.daily_tasker = DailyTask(None,pigeon = self.message_signal.emit)
         self.farm_info = farm_info
         # self.mainWindow = mainWindow # 为了获取窗口中的状态
         # self.mainWindow.materials_box_1
@@ -26,6 +26,7 @@ class TaskWorker(QObject):
         参数:
         tasks (list): 一个包含任务名称的列表，如 ['刷体力', '领取日常奖励']
         """
+        # self.daily_tasker.start_game()
         task_functions = {
             '刷体力': self.daily_tasker.clean_stamina, # brush_energy,
             '领取日常奖励': self.daily_tasker.daily_task, # claim_daily_reward,
@@ -39,6 +40,7 @@ class TaskWorker(QObject):
                 if task == "刷体力":
                     self.daily_tasker.clean_stamina(self.farm_info)
                 else:
+                    self.message_signal.emit("非体力任务")
                     task_function = task_functions[task]
                     task_function()
                     time.sleep(5)
@@ -51,7 +53,9 @@ class TaskWorker(QObject):
         # 如果tasks不为空，应当先检查是否打开了游戏
         if self.task_list:
             self.message_signal.emit("Checking if game is open...")
-            self.game_starter.start_game()
+            self.daily_tasker.start_game()
         self.task_dispatcher(self.task_list)
+        self.finished_signal.emit()
     def stop(self):
         self._stop_requested = True
+
