@@ -12,7 +12,7 @@ gp = Gamepad()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    app_icon = QIcon("icon/icon.ico")
+    app_icon = QIcon("icon/jizi.ico")
     app.setWindowIcon(app_icon)
 
     window = main_window_processor.MainWindow()

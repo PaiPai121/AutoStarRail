@@ -16,8 +16,14 @@
 #     window.show()
 #     sys.exit(app.exec())
 
-from src.gui import win_thread
+# from src.gui import win_thread
 
-if __name__ == "__main__":
-    TW = win_thread.TaskWorker(["123"])
-    TW.run()
+# if __name__ == "__main__":
+#     TW = win_thread.TaskWorker(["123"])
+#     TW.run()
+import paddle
+import vgamepad
+import time
+for i in range(10):
+    print(i)
+    time.sleep(1)

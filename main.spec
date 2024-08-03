@@ -3,8 +3,8 @@
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
-    binaries=[],
+    pathex=['D:\\work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\paddleocr', 'D:\\work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\paddle\\libs'],
+    binaries=[('D:\\work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\paddle\\libs', '.'),('D:\\work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\vgamepad\\win\\vigem\\client\\x64\\ViGEmClient.dll','.\\vgamepad\\win\\vigem\\client\\x64\\ViGEmClient.dll')],
     datas=[],
     hiddenimports=[],
     hookspath=[],
@@ -21,7 +21,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='main',
+    name='AutoStarRail v1.0.1',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -32,6 +32,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='jizi.ico'
 )
 coll = COLLECT(
     exe,
