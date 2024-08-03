@@ -11,7 +11,10 @@ from src.gui.win_thread import TaskWorker
 from start_game import StartGame
 import json
 ### 通过update和append message向窗口发送消息。
-
+jingyan_list = ["经验", "武器", "钱"]
+yiqi_list = ["霜风", "迅拳", "漂泊", "睿治", "圣颂", "野焰", "药使", "幽冥", "梦潜","勇骑"]
+xingji_list = ["毁灭-残刃", "毁灭-獠牙", "存护-坚守", "存护-神体琥珀", "巡猎-逐星", "巡猎-逆时", "丰饶-永恒", "丰饶-万象", "智识-智识", "同谐-群星", "同谐-天外", "虚无-沉沦", "虚无-焚天"]
+jinjie_list = ["空海", "巽风", "鸣雷", "炎华", "锋芒", "霜晶", "幻光", "冰棱", "震厄", "偃偶", "孽兽", "燔灼", "天人", "幽府", "焦炙", "嗔怒", "职司", "冰酿"]
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -36,10 +39,10 @@ class MainWindow(QMainWindow):
         self.worker_thread = None # 工作线程
 
         self.material_lists = {
-            0: ["经验", "武器", "钱"],
-            1: ["毁灭-残刃", "毁灭-獠牙", "存护-坚守", "存护-神体琥珀", "巡猎-逐星", "巡猎-逆时", "丰饶-永恒", "丰饶-万象", "智识-智识", "同谐-群星", "同谐-天外", "虚无-沉沦", "虚无-焚天"],
-            2: ["空海", "巽风", "鸣雷", "炎华", "锋芒", "霜晶", "幻光", "冰棱", "震厄", "偃偶", "孽兽", "燔灼", "天人", "幽府", "焦炙", "嗔怒", "职司", "冰酿"],
-            3: ["霜风", "迅拳", "漂泊", "睿治", "圣颂", "野焰", "药使", "幽冥", "梦潜"]
+            0: jingyan_list,
+            1: xingji_list,
+            2: jinjie_list,
+            3: yiqi_list
         } # 刷取材料列表
         
         '''
@@ -255,19 +258,19 @@ class MainWindow(QMainWindow):
         index = self.ui.materials_box_1.currentIndex() 
         if index == 0:
             self.ui.farm_item.clear()
-            self.ui.farm_item.addItems(["经验","武器","钱"])
+            self.ui.farm_item.addItems(jingyan_list)
             return 
         if index == 1:
             self.ui.farm_item.clear()
-            self.ui.farm_item.addItems(["毁灭-残刃","毁灭-獠牙","存护-坚守","存护-神体琥珀","巡猎-逐星","巡猎-逆时","丰饶-永恒","丰饶-万象","智识-智识","同谐-群星","同谐-天外","虚无-沉沦","虚无-焚天"])
+            self.ui.farm_item.addItems(xingji_list)
             return
         if index == 2:
             self.ui.farm_item.clear()
-            self.ui.farm_item.addItems(["空海","巽风","鸣雷","炎华","锋芒","霜晶","幻光","冰棱","震厄","偃偶","孽兽","燔灼","天人","幽府","焦炙","嗔怒","职司","冰酿"])
+            self.ui.farm_item.addItems(jinjie_list)
             return
         if index == 3:
             self.ui.farm_item.clear()
-            self.ui.farm_item.addItems(["霜风","迅拳","漂泊","睿治","圣颂","野焰","药使","幽冥","梦潜"])            
+            self.ui.farm_item.addItems(yiqi_list)            
             return
 
 def main_window():

@@ -32,6 +32,7 @@ class DailyTask:
         if find:
             self.pigeon("勋礼已经打开")
         else:
+            random_sleep(0.3)
             self.gp.press_button(B)
             random_sleep(0.3)
             self.gp.press_button(B)
@@ -46,7 +47,7 @@ class DailyTask:
     def get_nameless_honor(self):
         # 打开勋礼页面
         self.open_nameless_honor()
-
+        random_sleep(0.1)
         # 已经打开后，通过手柄切换标签找到对应的page
         if TargetDetector(self.window,self.gp).search_button("任务", RIGHT_SHOULDER):
             self.pigeon("找到：任务")
@@ -83,6 +84,7 @@ class DailyTask:
             self.pigeon("未找到" + tag)
 
     def find_type(self,  type = "遗器"):
+        random_sleep(0.1)
         # 已经找好了目标page，去仔细找对应的类型，如模拟宇宙、拟造花萼等
         if TargetDetector(self.window,self.gp).find_highlight(type, DOWN):
             self.pigeon("找到" + type)
@@ -93,6 +95,7 @@ class DailyTask:
     def find_dungeon(self, dungeon):
         # 已经找好了目标page，去仔细找对应的类型，如模拟宇宙、拟造花萼等
         self.gp.click_button(A)
+        random_sleep(0.2)
         if TargetDetector(self.window,self.gp).find_dungeon(dungeon, DOWN):
             self.pigeon("找到" + dungeon)
         else:
@@ -203,33 +206,58 @@ class DailyTask:
         stamina = self.check_stamina() # 获取当前体力数值
         # 小本耗10
         count = 0
+        def battle_with_10_stamina(sta):
+            if stamina > 60:
+                # 拉满，六次扳机
+                battle_times = 6
+            else:
+                battle_times = int(np.floor(stamina/10))
+            for _ in range(battle_times):
+                self.gp.RIGHT_TRIGGER(1)
+                random_sleep(0.01)
+            self.gp.click_button(Y) # 开始，进入编队
+            random_sleep(0.5)
+            self.gp.click_button(Y) # 开始战斗
+
+            stamina -= battle_times * 10
+            wait_page_by_text(self.window, "退出关卡",timeout= 600)
+
+
         if stamina_cost == 10:
             while stamina > 10:
                 battle_times = 0
-                if stamina > 60:
-                    # 拉满，六次扳机
-                    battle_times = 6
-                else:
-                    battle_times = int(np.floor(stamina/10))
-                for _ in range(battle_times):
-                    self.gp.RIGHT_TRIGGER(1)
-                    random_sleep(0.01)
-                self.gp.click_button(Y) # 开始，进入编队
-                random_sleep(0.5)
-                self.gp.click_button(Y) # 开始战斗
+                battle_with_10_stamina(stamina)
+                # if stamina > 60:
+                #     # 拉满，六次扳机
+                #     battle_times = 6
+                # else:
+                #     battle_times = int(np.floor(stamina/10))
+                # for _ in range(battle_times):
+                #     self.gp.RIGHT_TRIGGER(1)
+                #     random_sleep(0.01)
+                # self.gp.click_button(Y) # 开始，进入编队
+                # random_sleep(0.5)
+                # self.gp.click_button(Y) # 开始战斗
 
-                stamina -= battle_times * 10
-                wait_page_by_text(self.window, "退出关卡",timeout= 600)
+                # stamina -= battle_times * 10
+                # wait_page_by_text(self.window, "退出关卡",timeout= 600)
                 count += 1
                 self.pigeon("完成战斗 "+str(count) + " 次")
                 if stamina > 60:
                     self.gp.click_button(Y) # 再来一次
                 elif stamina > 10:
                     self.gp.click_button(B) # 推出
-                    
-                    
                     random_sleep(2)
                     self.gp.click_button(A) # 再进入挑战界面
+                    screenshot,_,_,_,_ = get_screenshot(self.window)
+                    find,_,_ = findText(screenshot,"可能获取")
+                    if find:
+                        battle_with_10_stamina(stamina)
+                    else:
+                        self.gp.click_button(A)
+                        random_sleep(2)
+                        battle_with_10_stamina(stamina)
+
                 else:
                     self.gp.click_button(B) # 推出
         else:
@@ -258,11 +286,11 @@ class DailyTask:
                 random_sleep(0.5)
 
         self.pigeon("体力清除完成")
-        self.gp.click_button(B) # 进入副本
+        self.gp.click_button(B) # 离开副本
         random_sleep(0.5)
-        self.gp.click_button(B) # 进入副本
+        self.gp.click_button(B) # 离开副本
         random_sleep(0.3)
-        self.gp.click_button(B) # 进入副本
+        self.gp.click_button(B) # 离开副本
         random_sleep(0.7)
     def illusion(self,name):
         '''
