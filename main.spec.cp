@@ -3,7 +3,7 @@ exename = "AutoStarRail v1.0.1"
 
 a = Analysis(
     ['main.py'],
-    pathex=[''],
+    pathex=[],
     binaries=[('D:\\work_console\\AutoStarRail\\.venv\\Lib\\site-packages\\vgamepad\\win\\vigem\\client\\x64\\ViGEmClient.dll','.\\vgamepad\\win\\vigem\\client\\x64')],
     datas=[],
     hiddenimports=[],

@@ -21,9 +21,12 @@
 # if __name__ == "__main__":
 #     TW = win_thread.TaskWorker(["123"])
 #     TW.run()
-import paddle
+from paddleocr import PaddleOCR
 import vgamepad
 import time
+
+
+ocr = PaddleOCR(use_angle_cls = True,lang='ch')
 for i in range(10):
     print(i)
     time.sleep(1)

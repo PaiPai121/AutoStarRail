@@ -17,7 +17,7 @@ class DailyTask:
         SG = StartGame(pigeon= self.pigeon,gp = self.gp)
         self.pigeon("start game with gamepad")
         SG.start_game()
-
+                                     
     def open_nameless_honor(self):
         # 打开勋礼页面
         self.gp.press_button(LEFT_SHOULDER)
@@ -105,6 +105,12 @@ class DailyTask:
 
 
     def open_star_guide(self):
+        self.gp.press_button(B)
+        random_sleep(0.5)
+        self.gp.press_button(B)
+        random_sleep(0.5)
+        self.gp.press_button(B)
+        random_sleep(0.5)
         # 打开星际和平指南
         self.gp.press_button(LEFT_SHOULDER)
         self.gp.joystick_movement(np.pi * 1 / 4, duration= 1) # 移动到指南
@@ -133,9 +139,16 @@ class DailyTask:
         screenshot,_,_,_,_ = get_screenshot(self.window)
         _,_,fullText = findText_with_full_Text(screenshot,r"/240")
         stamina = fullText.split(r'/')
-        self.pigeon("体力：" + stamina[0] + "/" + stamina[1])
+        self.pigeon("体力：" + stamina[0] + "/" )
         return int(stamina[0])
     
+    def check_immersing(self):
+        # 检查剩余沉浸器的数量
+        screenshot,_,_,_,_ = get_screenshot(self.window)
+        _,_,fullText = findText_with_full_Text(screenshot,r"/8")
+        stamina = fullText.split(r'/')
+        self.pigeon("剩余沉浸器：" + stamina[0] + "/" )
+        return int(stamina[0])
     def little_dungeon_10(self,farm_list):
         '''
         
@@ -201,12 +214,74 @@ class DailyTask:
         self.pigeon("加载完成")
         self.using_stamina(10)
 
+    def using_immersing(self,num_immersing,name):
+        if num_immersing <= 0:
+            self.pigeon("没有沉浸器")
+            return
+        count = 1
+        self.gp.click_button(Y) # 进入战斗
+        random_sleep(1)
+
+        '''得走到boss脸上'''
+        # self.gp.joystick_movement(theta=np.pi/2,duration=0,amplitude=1,joystick="L")
+        self.gp.click_button(X) # 开始战斗
+        random_sleep(1)
+        # self.gp.joystick_movement(amplitude=0,duration=0,joystick="L")
+        self.gp.click_button(X) # 开始战斗
+        random_sleep(1)
+        self.gp.click_button(X) # 开始战斗
+        random_sleep(1)
+        self.gp.click_button(X) # 开始战斗
+        random_sleep(1)
+        self.gp.click_button(X) # 开始战斗
+        random_sleep(1)
+        self.gp.click_button(X) # 开始战斗
+        random_sleep(1)
+        self.gp.click_button(X) # 开始战斗
+        random_sleep(1)
+        self.gp.click_button(X) # 开始战斗
+        random_sleep(1)
+
+        num_immersing -= 1
+        while num_immersing > 0:
+            wait_page_by_text(self.window, "退出关卡",timeout= 600)
+            if num_immersing > 0:
+                random_sleep(1)
+                self.gp.click_button(Y) # 开始下一次战斗
+                num_immersing -= 1
+            else:
+                self.gp.click_button(B) # 离开战斗
+                break
+            
+            self.gp.click_button(B) # 退出
+            count += 1
+            self.pigeon("完成战斗 "+str(count) + " 次")
+
+        #     wait_page_by_text(self.window,name) # wait 多久？
+        #     self.pigeon("find:"+name)
+        #     random_sleep(1)
+
+        #     self.gp.click_button(A) # 进入副本
+        #     random_sleep(0.5)
+
+        # self.pigeon("模拟宇宙清除完成")
+        # self.gp.click_button(B) # 离开副本
+        # random_sleep(0.5)
+        # self.gp.click_button(B) # 离开副本
+        # random_sleep(0.3)
+        # self.gp.click_button(B) # 离开副本
+        # random_sleep(0.7)
+        '''离开副本'''
+        self.gp.click_button(BACK)
+        random_sleep(1)
+        self.gp.click_button(A)
 
     def using_stamina(self,stamina_cost,find_tag = "A"):
         stamina = self.check_stamina() # 获取当前体力数值
         # 小本耗10
         count = 0
-        def battle_with_10_stamina(sta):
+        def battle_with_10_stamina(stamina):
+            # global stamina
             if stamina > 60:
                 # 拉满，六次扳机
                 battle_times = 6
@@ -221,26 +296,14 @@ class DailyTask:
 
             stamina -= battle_times * 10
             wait_page_by_text(self.window, "退出关卡",timeout= 600)
+            return stamina
 
 
         if stamina_cost == 10:
             while stamina > 10:
                 battle_times = 0
-                battle_with_10_stamina(stamina)
-                # if stamina > 60:
-                #     # 拉满，六次扳机
-                #     battle_times = 6
-                # else:
-                #     battle_times = int(np.floor(stamina/10))
-                # for _ in range(battle_times):
-                #     self.gp.RIGHT_TRIGGER(1)
-                #     random_sleep(0.01)
-                # self.gp.click_button(Y) # 开始，进入编队
-                # random_sleep(0.5)
-                # self.gp.click_button(Y) # 开始战斗
-
-                # stamina -= battle_times * 10
-                # wait_page_by_text(self.window, "退出关卡",timeout= 600)
+                stamina = battle_with_10_stamina(stamina)
+                self.pigeon("剩余体力 : "+str(stamina))
                 count += 1
                 self.pigeon("完成战斗 "+str(count) + " 次")
                 if stamina > 60:
@@ -250,7 +313,7 @@ class DailyTask:
                     random_sleep(2)
                     self.gp.click_button(A) # 再进入挑战界面
                     screenshot,_,_,_,_ = get_screenshot(self.window)
-                    find,_,_ = findText(screenshot,"可能获取")
+                    find,_ = findText(screenshot,"可能获取")
                     if find:
                         battle_with_10_stamina(stamina)
                     else:
@@ -316,6 +379,23 @@ class DailyTask:
         self.pigeon("加载完成")
         self.using_stamina(40,name)
 
+    def space_simu(self,name):
+        '''
+        check stamin和沉浸器
+        '''
+        num_immersing = self.check_immersing()
+        '''
+        find
+        '''
+        self.find_type("位面饰品")
+        self.pigeon("found 模拟宇宙")
+        self.find_dungeon(name)
+        self.pigeon("found")
+        self.gp.click_button(A)
+        wait_page_by_text(self.window, "挑战")
+        self.pigeon("加载完成")
+        self.using_immersing(num_immersing,name)
+
     def clean_stamina(self,farm_info):
         """清体力"""
         self.window = self.wait_window("崩坏：星穹铁道")
@@ -336,6 +416,9 @@ class DailyTask:
             self.illusion(farm_info[1])
         if farm_info[0] == 3:
             self.Artifacts(farm_info[1])
+        if farm_info[0] == 4:
+            self.space_simu(farm_info[1])
+
 
     def check_daily_task(self):
         figure,_,_,_,_ = get_screenshot(self.window)
@@ -354,10 +437,28 @@ class DailyTask:
         # 检查今日日常
         find = self.check_daily_task()
         if not find:
-            self.pigeon("日常已经全部完成")
+            figure,_,_,_,_ = get_screenshot(self.window)
+            self.pigeon("日常已经全部完成") # 有可能是都领取了，也有可能是还没领取
+            find,_,_ = findText_with_full_Text(figure,text = "领取")
+            while find:# 还有没领取的
+                self.gp.click_button(DOWN)
+                random_sleep(0.3)
+                self.gp.click_button(A)
+                random_sleep(0.2)
+                figure,_,_,_,_ = get_screenshot(self.window)
+                find,_,_ = findText_with_full_Text(figure,text = "领取")
+                find2 = self.check_daily_task()
+                find = find or find2
+
             self.gp.click_button(UP)
             random_sleep(0.3)
             self.gp.click_button(A)
+            random_sleep(0.3)
+            self.gp.click_button(B)
+            random_sleep(0.3)
+            self.gp.click_button(B)
+            random_sleep(0.3)
+            self.gp.click_button(B)
             return True
         
         ## 领取所有完成的任务
@@ -409,8 +510,8 @@ class DailyTask:
         random_sleep(0.2)
         self.gp.click_button(A)
         # 离开页面
-        for i in range(3):
-            random_sleep(0.1)
+        for i in range(5):
+            random_sleep(0.5)
             self.gp.click_button(B)
 
 

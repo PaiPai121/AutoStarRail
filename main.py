@@ -16,6 +16,7 @@ if __name__ == "__main__":
     app.setWindowIcon(app_icon)
 
     window = main_window_processor.MainWindow()
+    window.setWindowTitle("AutoStarRail v1.0.1")
     window.show()
     sys.exit(app.exec())
 

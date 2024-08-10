@@ -69,6 +69,11 @@
               <string>遗器</string>
              </property>
             </item>
+            <item>
+             <property name="text">
+              <string>模拟宇宙</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item>

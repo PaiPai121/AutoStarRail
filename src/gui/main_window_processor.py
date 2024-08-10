@@ -15,6 +15,7 @@ jingyan_list = ["经验", "武器", "钱"]
 yiqi_list = ["霜风", "迅拳", "漂泊", "睿治", "圣颂", "野焰", "药使", "幽冥", "梦潜","勇骑"]
 xingji_list = ["毁灭-残刃", "毁灭-獠牙", "存护-坚守", "存护-神体琥珀", "巡猎-逐星", "巡猎-逆时", "丰饶-永恒", "丰饶-万象", "智识-智识", "同谐-群星", "同谐-天外", "虚无-沉沦", "虚无-焚天"]
 jinjie_list = ["空海", "巽风", "鸣雷", "炎华", "锋芒", "霜晶", "幻光", "冰棱", "震厄", "偃偶", "孽兽", "燔灼", "天人", "幽府", "焦炙", "嗔怒", "职司", "冰酿"]
+space_simu_list = ["永恒笑剧","伴你入眠","天剑如雨","孽果盘生","百年冻土","温柔话语","浴火钢心","坚城不倒"]
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -42,7 +43,8 @@ class MainWindow(QMainWindow):
             0: jingyan_list,
             1: xingji_list,
             2: jinjie_list,
-            3: yiqi_list
+            3: yiqi_list,
+            4: space_simu_list
         } # 刷取材料列表
         
         '''
@@ -160,13 +162,18 @@ class MainWindow(QMainWindow):
         if self.worker_thread and self.worker_thread.isRunning():
             self.ui.start_button.setEnabled(False)
             self.ui.start_button.setText("Start")
-            # self.task_worker.stop()
+            try:
+                self.worker_thread.terminate()  
+                self.worker_thread = None
+            except:
+                pass
+            # # self.task_worker.stop()
             
-            # self.stop_task_signal.emit()  # 发出停止信号
-            # self.worker_thread.killTimer
-            self.worker_thread.quit()
-            self.worker_thread.wait()
-            self.worker_thread = None
+            # # self.stop_task_signal.emit()  # 发出停止信号
+            # # self.worker_thread.killTimer
+            # self.worker_thread.quit()
+            # self.worker_thread.wait()
+            # self.worker_thread = None
 
             self.ui.start_button.setEnabled(True)
         else:
@@ -254,6 +261,7 @@ class MainWindow(QMainWindow):
         1:行迹材料
         2:进阶材料
         3:遗器
+        4:模拟宇宙
         """
         index = self.ui.materials_box_1.currentIndex() 
         if index == 0:
@@ -271,6 +279,10 @@ class MainWindow(QMainWindow):
         if index == 3:
             self.ui.farm_item.clear()
             self.ui.farm_item.addItems(yiqi_list)            
+            return
+        if index == 4:
+            self.ui.farm_item.clear()
+            self.ui.farm_item.addItems(space_simu_list)            
             return
 
 def main_window():

@@ -138,16 +138,16 @@ class TargetDetector:
     def find_daily_weituo(self):
         figure, _, _, _, _ = self.win_action.get_screenshot(self.window)
         finds = self.detect_dungeon_boxes(figure,["次委托","前往"],area_ratio=0.2)
-        if finds[0]:
+        if (isinstance(finds,bool) and finds) or (isinstance(finds,list) and finds[0]):
             print("finded")
             time.sleep(0.1 + random.randint(0, 10) / 100)
             return finds
         else:
             self.gp.click_button(RIGHT)
             time.sleep(0.1 + random.randint(0, 10) / 100)
-            return self.find_daily_weituo()
+            return self.find_daily_weituo()  # 这里达到最大递归深度了，检查一下问题
 
-    def detect_dungeon_boxes(self,image,text, area_ratio,show =False):
+    def detect_dungeon_boxes(self,image,text, area_ratio = 0.2,show =False):
         # 可以找出当前高亮的选择区域
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         edges = cv2.Canny(gray, threshold1=100, threshold2=200)

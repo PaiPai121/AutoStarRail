@@ -85,7 +85,7 @@ class Gamepad:
         self.gamepad.update()
 
     def LEFT_JOYSTICK(self,theta,amplitude,ran_theta = 2*np.pi/25,ran_amp = 1/25): #x_value, y_value):
-        theta = theta + random.randint(0,ran_theta*100)/100
+        theta = theta + random.randint(0,int(ran_theta*100))/100
         amplitude = amplitude + random.randint(0,ran_amp*100)/100
         x_value = 1.414*amplitude * np.cos(theta)
         y_value = 1.414*amplitude * np.sin(theta)
@@ -104,19 +104,21 @@ class Gamepad:
         # 右摇杆XY轴  x_values和y_values改成-1.0到1.0之间的浮点值，可以精确到小数点后5位
         self.gamepad.update()
         if self.pigeon:
-            self.pigeon("" + "Left joystick")
+            self.pigeon("" + "Right joystick")
 
-    def joystick_movement(self, theta=0, duration=0.5, amplitude=1):
+    def joystick_movement(self, theta=0, duration=0.5, amplitude=1,joystick = "R"):
         start_time = time.time()
+        duration = duration + random.randint(0,int(0.05*100))/1000
         while time.time() - start_time < duration:
             # 时间-角度序列
             theta_time = theta * (time.time() - start_time) / duration
 
             # 幅度
             amplitude_time = amplitude * (time.time() - start_time) / duration
-
-            self.RIGHT_JOYSTCIK(theta_time, amplitude_time)
-
+            if joystick == "R":
+                self.RIGHT_JOYSTCIK(theta_time, amplitude_time)
+            if joystick == "L":
+                self.LEFT_JOYSTICK(theta_time, amplitude_time)
             time.sleep(0.01)
 
 if __name__ == "__main__":
