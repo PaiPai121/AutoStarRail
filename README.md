@@ -45,8 +45,7 @@ AutoStarRail是一个用于自动化的Python项目，旨在帮助用户在《�
 
 
 ## 安装指南
-暂无release
-源码可通过以下方式获取
+[Release v1.0.0](https://github.com/PaiPai121/AutoStarRail/releases/tag/StarRail)
 
 '''
 git clone https://github.com/PaiPai121/AutoStarRail.git
