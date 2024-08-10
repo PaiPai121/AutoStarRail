@@ -4,5 +4,5 @@ test.py
 /output_images2
 /.venv
 /config/credentials.txt
-/build/*
-/dist/*
+/build
+/dist
