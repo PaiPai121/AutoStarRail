@@ -22,7 +22,7 @@
 #     TW = win_thread.TaskWorker(["123"])
 #     TW.run()
 from paddleocr import PaddleOCR
-import vgamepad
+# import vgamepad
 import time
 
 
